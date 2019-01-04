@@ -1,0 +1,19 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.navbar-inverse {
+    background-color: #312f2f;
+    border-color: #312f2f;
+}
+#layout-content {
+    margin-top: 80px;
+}
+.icon-header {
+    float: left;
+    color: #ffffff;
+    font-size: 28px;
+    position: relative;
+    top: 7px;
+    margin-right: 10px;
+}

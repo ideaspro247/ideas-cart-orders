@@ -1,0 +1,17 @@
+title = "order success"
+url = "/order-success"
+layout = "default"
+is_hidden = 0
+==
+{% flash %}
+<p
+        data-control="flash-message"
+        class="flash-message fade {{ type }}"
+        data-interval="5">
+    {{ message }}
+</p>
+{% endflash %}
+        
+<div class="container">
+    <p>{{ 'ideas.cart::lang.msg.save_order_success' | trans }}</p>
+</div>        

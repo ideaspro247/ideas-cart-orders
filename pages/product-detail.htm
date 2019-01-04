@@ -1,0 +1,13 @@
+title = "product detail"
+url = "/product/:slug"
+layout = "default"
+is_hidden = 0
+
+[Review]
+
+[Ideas\Cart\Components\Product Product]
+==
+<div class="container">
+{% component "Product" %}
+{% component "Review" %}
+</div>

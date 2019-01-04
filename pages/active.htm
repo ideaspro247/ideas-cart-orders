@@ -1,0 +1,25 @@
+title = "Active user"
+url = "/active/:code"
+layout = "default"
+is_hidden = 0
+
+[Ideas\Orders\Components\User User]
+==
+function onStart()
+{
+    $code = $this->param('code');
+    $user = new \Ideas\Orders\Facades\UserFacades();
+    $rs = $user::activeUser($code);
+    if ($rs['rs'] == \Ideas\Cart\Models\IdeasCart::FAIL) {
+        \October\Rain\Support\Facades\Flash::error($rs['msg']);
+        return redirect('/');
+    } else {
+        \October\Rain\Support\Facades\Flash::success($rs['msg']);
+         return redirect('/login');
+    }
+
+}
+==
+<div class="container">
+
+</div>
